@@ -17,24 +17,28 @@
     <title>Weather App</title>
   </head>
   <body>
-    <div id="app" class="bg-blue-300 min-w-full min-h-dvh flex text-center">
-      <div class="bg-slate-500 bg-opacity-15 rounded-xl w-screen m-10">
-        <h1 class="text-6xl font-extrabold p-5">Weather App</h1>
-        <form id="form">
-          <label class="flex justify-center items-center"
-            ><span class="material-symbols-outlined text-4xl">
-              location_on
-            </span>
+    <div id="app" class="bg-black min-h-dvh text-white">
+      <main
+        class="border-red-500 border min-h-dvh flex flex-col justify-center items-center"
+      >
+        <h1 class="text-6xl italic font-bold m-5">Weather App</h1>
+
+        <label class="relative">
+          <form id="form">
             <input
               type="text"
+              class="bg-transparent w-52 pl-12 py-3 text-xl placeholder:text-center"
               id="cityInput"
               value=""
-              placeholder="Input City"
-              class="bg-transparent w-48 font-bold py-2 rounded-lg text-center text-2xl outline-none placeholder:flex placeholder:font-bold placeholder:text-black placeholder:pl-5 placeholder:text-2xl"
+              placeholder="Add City Name"
             />
-          </label>
-        </form>
-      </div>
+            <img
+              src="/Icons/Group.png"
+              class="absolute top-4 left-4 z-10 h-5"
+            />
+          </form>
+        </label>
+      </main>
     </div>
     <script type="module" src="/main.js"></script>
   </body>
