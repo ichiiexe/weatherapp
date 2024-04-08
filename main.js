@@ -70,14 +70,14 @@ async function createHTML() {
   </div>
 </div>
 <hr />
-<div class="flex items-center min-w-full gap-10 p-10 flex-wrap">
+<div class="flex items-center min-w-full gap-10 p-10 flex-wrap sm:flex-col">
   <div class="flex flex-col items-center pt-2 flex-1 basis-40">
     <span class="material-symbols-outlined pb-2"> water_drop </span>
     <h2>${weather.humidity}%</h2>
     <h2>Humidity</h2>
   </div>
   <div
-    class="flex flex-col border-gray-400 h-14 justify-center border"
+    class="flex flex-col border-gray-400 h-14 justify-center border sm:hidden"
   ></div>
   <div class="flex flex-col items-center flex-1 basis-40">
     <img class="h-10" src="IconPack/Frame 10.png" />
@@ -85,7 +85,7 @@ async function createHTML() {
     <h2>Precipitation</h2>
   </div>
   <div
-    class="flex flex-col border-gray-400 h-14 justify-center border lg:hidden md:hidden"
+    class="flex flex-col border-gray-400 h-14 justify-center border lg:hidden md:hidden sm:hidden"
   ></div>
   <div class="flex flex-col items-center flex-1 basis-40">
     <img class="h-10" src="IconPack/Frame 11.png" />
@@ -93,7 +93,7 @@ async function createHTML() {
     <h2>Wind Speed</h2>
   </div>
   <div
-    class="flex flex-col border-gray-400 h-14 justify-center border xl:invisible lg:visible"
+    class="flex flex-col border-gray-400 h-14 justify-center border xl:invisible lg:visible sm:hidden"
   ></div>
   <div class="flex flex-col items-center flex-1 basis-40">
     <img class="h-10" src="IconPack/Frame 13.png" />
@@ -101,7 +101,7 @@ async function createHTML() {
     <h2>Sunrise</h2>
   </div>
   <div
-    class="flex flex-col border-gray-400 h-14 justify-center border xxl:invisible xl:visible lg:hidden md:hidden" 
+    class="flex flex-col border-gray-400 h-14 justify-center border xxl:invisible xl:visible lg:hidden md:hidden sm:hidden" 
   ></div>
   <div class="flex flex-col items-center flex-1 basis-40">
     <img class="h-10" src="IconPack/Frame 12.png" />
