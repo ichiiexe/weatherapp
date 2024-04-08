@@ -20,8 +20,6 @@ async function createHTML() {
   console.log(time, weather, condition);
   const cityInput = document.getElementById("cityInput").value;
   const app = await document.querySelector("#app");
-  console.log(moment.unix(weather.sunrise).format("LT"));
-  console.log(moment.unix(weather.sunset).format("LT"));
 
   app.innerHTML = `<header class="p-10">
   <label class="relative">
