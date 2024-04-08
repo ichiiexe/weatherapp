@@ -1,6 +1,7 @@
 import "./style.css";
 import { getWeather, getTime, getCondition, setWeather } from "./utils.js";
 import moment from "moment";
+import "tailwindcss/tailwind.css";
 
 const form = document.getElementById("form");
 form.addEventListener("submit", (event) => {
@@ -33,7 +34,7 @@ async function createHTML() {
     placeholder="${cityInput}"
   />
   <img
-    src="/public/Icons/Group.png"
+    src="Icons/Group.png"
     class="absolute top-4 left-4 z-10 h-5"
   />
   <form />
@@ -82,7 +83,7 @@ async function createHTML() {
     class="flex flex-col border-gray-400 h-14 justify-center border"
   ></div>
   <div class="flex flex-col items-center">
-    <img class="h-10" src="/IconPack/Frame 10.png" />
+    <img class="h-10" src="IconPack/Frame 10.png" />
     <h2>${weather.cloud_pct}%</h2>
     <h2>Precipitation</h2>
   </div>
@@ -90,7 +91,7 @@ async function createHTML() {
     class="flex flex-col border-gray-400 h-14 justify-center border"
   ></div>
   <div class="flex flex-col items-center">
-    <img class="h-10" src="/IconPack/Frame 11.png" />
+    <img class="h-10" src="IconPack/Frame 11.png" />
     <h2>${weather.wind_speed} km/h</h2>
     <h2>Wind Speed</h2>
   </div>
@@ -98,7 +99,7 @@ async function createHTML() {
     class="flex flex-col border-gray-400 h-14 justify-center border"
   ></div>
   <div class="flex flex-col items-center">
-    <img class="h-10" src="/IconPack/Frame 13.png" />
+    <img class="h-10" src="IconPack/Frame 13.png" />
     <h2>${moment.unix(weather.sunrise).format("LT")}</h2>
     <h2>Sunrise</h2>
   </div>
