@@ -17,7 +17,6 @@ async function createHTML() {
     getCondition(),
   ]);
 
-  console.log(time, weather, condition);
   const cityInput = document.getElementById("cityInput").value;
   const app = await document.querySelector("#app");
 
