@@ -55,37 +55,37 @@ export function setWeather(condition) {
   const imageElement = document.getElementById("weatherIcon");
   const conditionName = document.getElementById("conditionName");
   if (condition.current.weather_code === 0) {
-    imageElement.src = "/WeatherPack/Sunny.png";
+    imageElement.src = "WeatherPack/Sunny.png";
     conditionName.textContent = "Clear Sky";
   } else if (condition.current.weather_code === 1) {
-    imageElement.src = "/WeatherPack/Sunny.png";
+    imageElement.src = "WeatherPack/Sunny.png";
     conditionName.textContent = "Mainly Clear";
   } else if (condition.current.weather_code === 2) {
-    imageElement.src = "/WeatherPack/Partly-cloudy.png.png.png";
+    imageElement.src = "WeatherPack/Partly-cloudy.png.png.png";
     conditionName.textContent = "Party Cloudy";
   } else if (condition.current.weather_code === 3) {
-    imageElement.src = "/WeatherPack/Cloudy.png";
+    imageElement.src = "WeatherPack/Cloudy.png";
     conditionName.textContent = "Overcast";
   } else if (condition.current.weather_code === 45) {
-    imageElement.src = "/WeatherPack/Fog.png";
+    imageElement.src = "WeatherPack/Fog.png";
     conditionName.textContent = "Foggy";
   } else if (condition.current.weather_code === 51) {
-    imageElement.src = "/WeatherPack/Drizzle.png";
+    imageElement.src = "WeatherPack/Drizzle.png";
     conditionName.textContent = "Drizzle";
   } else if (condition.current.weather_code === 61) {
-    imageElement.src = "/WeatherPack/Rain.png";
+    imageElement.src = "WeatherPack/Rain.png";
     conditionName.textContent = "Rain";
   } else if (condition.current.weather_code === 71 || 73 || 75) {
-    imageElement.src = "/WeatherPack/Snow.png";
+    imageElement.src = "WeatherPack/Snow.png";
     onditionName.textContent = "Snow";
   } else if ((condition.current.weather_code === 80, 81, 82)) {
-    imageElement.src = "/WeatherPack/Heavy-rain.png";
+    imageElement.src = "WeatherPack/Heavy-rain.png";
     conditionName.textContent = "Rain showers";
   } else if (condition.current.weather_code === 95) {
-    imageElement.src = "/WeatherPack/Sever-thunderstorm.png";
+    imageElement.src = "WeatherPack/Sever-thunderstorm.png";
     conditionName.textContent = "Light Thunderstorm";
   } else if ((condition.current.weather_code === 96, 99)) {
-    imageElement.src = "/WeatherPack/Rain&Thunderstorm.png";
+    imageElement.src = "WeatherPack/Rain&Thunderstorm.png";
     conditionName.textContent = "Heavy Thunderstorm";
   }
 }

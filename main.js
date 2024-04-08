@@ -34,7 +34,7 @@ async function createHTML() {
     placeholder="${cityInput}"
   />
   <img
-    src="Icons/Group.png"
+    src="IconPack/Group.png"
     class="absolute top-4 left-4 z-10 h-5"
   />
   <form />
@@ -107,7 +107,7 @@ async function createHTML() {
     class="flex flex-col border-gray-400 h-14 justify-center border"
   ></div>
   <div class="flex flex-col items-center">
-    <img class="h-10" src="/IconPack/Frame 12.png" />
+    <img class="h-10" src="IconPack/Frame 12.png" />
     <h2>${moment.unix(weather.sunset).format("LT")}</h2>
     <h2>Sunset</h2>
   </div>
