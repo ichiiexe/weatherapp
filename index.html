@@ -18,95 +18,26 @@
   </head>
   <body>
     <div id="app" class="bg-black min-h-dvh text-white">
-      <header class="p-10 min-w-full">
+      <main
+        class="border-red-500 border min-h-dvh flex flex-col justify-center items-center"
+      >
+        <h1 class="text-6xl italic font-bold m-5">Weather App</h1>
+
         <label class="relative">
-        <form id="form" class="flex justify-between">
-        <input
-          type="text"
-          class="bg-transparent pl-10 py-3 text-xl placeholder:"
-          id="cityInput"
-          value=""
-          placeholder="${cityInput}"
-        />
-        <img
-          src="IconPack/Group.png"
-          class="absolute top-4 left-4 z-10 h-5"
-        />
-        <form />
-      </label>
-      <div class="flex items-center">
-      <h1 class="text-4xl font-thin italic">Weather App</h1>
-      </div>
-      </header>
-      <main class="flex flex-col justify-center items-center">
-      <h1 class="font-bold text-4xl tracking-widest pt-5">
-        aTHENS
-      </h1>
-      <h1>10:30 10:30 10:30</h1>
-      <h1 id="conditionName" class="font-thin text-4xl tracking-widest pt-8"></h1>
-      <img id="weatherIcon" class="size-36 m-10" src="" />
-      <h1 class="font-thin text-7xl">27&deg;</h1>
-      <div class="flex gap-10 my-10">
-        <div class="flex flex-col justify-center items-center gap-5">
-          <h1 class="flex justify-center">
-            <span class="material-symbols-outlined text-red-500">
-              arrow_downward_alt </span
-            >min
-          </h1>
-          <h2>27&deg;</h2>
-        </div>
-        <div
-          class="flex flex-col border-gray-400 justify-center border"
-        ></div>
-        <div class="flex flex-col justify-center items-center gap-5">
-          <h1 class="flex justify-center">
-            <span class="material-symbols-outlined text-green-500">
-              arrow_upward_alt </span
-            >max
-          </h1>
-          <h2>27&deg;</h2>
-        </div>
-      </div>
-      <hr />
-      <div class="flex items-center min-w-full gap-10 p-10 flex-wrap">
-        <div class="flex flex-col items-center pt-2 flex-1 basis-40">
-          <span class="material-symbols-outlined pb-2"> water_drop </span>
-          <h2>27%</h2>
-          <h2>Humidity</h2>
-        </div>
-        <div
-          class="flex flex-col border-gray-400 h-14 justify-center border"
-        ></div>
-        <div class="flex flex-col items-center flex-1 basis-40">
-          <img class="h-10" src="IconPack/Frame 10.png" />
-          <h2>27%</h2>
-          <h2>Precipitation</h2>
-        </div>
-        <div
-          class="flex flex-col border-gray-400 h-14 justify-center border lg:hidden md:hidden"
-        ></div>
-        <div class="flex flex-col items-center flex-1 basis-40">
-          <img class="h-10" src="IconPack/Frame 11.png" />
-          <h2>27 km/h</h2>
-          <h2>Wind Speed</h2>
-        </div>
-        <div
-          class="flex flex-col border-gray-400 h-14 justify-center border xl:invisible lg:visible"
-        ></div>
-        <div class="flex flex-col items-center flex-1 basis-40">
-          <img class="h-10" src="IconPack/Frame 13.png" />
-          <h2>10:30 AM</h2>
-          <h2>Sunrise</h2>
-        </div>
-        <div
-          class="flex flex-col border-gray-400 h-14 justify-center border xxl:invisible xl:visible lg:hidden md:hidden" 
-        ></div>
-        <div class="flex flex-col items-center flex-1 basis-40">
-          <img class="h-10" src="IconPack/Frame 12.png" />
-          <h2>10:30 AM</h2>
-          <h2>Sunset</h2>
-        </div>
-      </div>
+          <form id="form">
+            <input
+              type="text"
+              class="bg-transparent w-52 pl-12 py-3 text-xl placeholder:text-center"
+              id="cityInput"
+              value=""
+              placeholder="Add City Name"
+            />
+            <img
+              src="IconPack/Group.png"
+              class="absolute top-4 left-4 z-10 h-5"
+            />
+          </form>
+        </label>
       </main>
     </div>
     <script type="module" src="/main.js"></script>

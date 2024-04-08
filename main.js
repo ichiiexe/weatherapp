@@ -20,7 +20,7 @@ async function createHTML() {
   const cityInput = document.getElementById("cityInput").value;
   const app = await document.querySelector("#app");
 
-  app.innerHTML = `<header class="p-10">
+  app.innerHTML = ` <header class="p-10 min-w-full">
   <label class="relative">
   <form id="form" class="flex justify-between">
   <input
@@ -40,7 +40,7 @@ async function createHTML() {
 <h1 class="text-4xl font-thin italic">Weather App</h1>
 </div>
 </header>
-<main class="flex flex-col items-center">
+<main class="flex flex-col justify-center items-center">
 <h1 class="font-bold text-4xl tracking-widest pt-5">
   ${cityInput}
 </h1>
@@ -70,8 +70,8 @@ async function createHTML() {
   </div>
 </div>
 <hr />
-<div class="flex w-full justify-evenly items-center p-12">
-  <div class="flex flex-col items-center pt-2">
+<div class="flex items-center min-w-full gap-10 p-10 flex-wrap">
+  <div class="flex flex-col items-center pt-2 flex-1 basis-40">
     <span class="material-symbols-outlined pb-2"> water_drop </span>
     <h2>${weather.humidity}%</h2>
     <h2>Humidity</h2>
@@ -79,31 +79,31 @@ async function createHTML() {
   <div
     class="flex flex-col border-gray-400 h-14 justify-center border"
   ></div>
-  <div class="flex flex-col items-center">
+  <div class="flex flex-col items-center flex-1 basis-40">
     <img class="h-10" src="IconPack/Frame 10.png" />
     <h2>${weather.cloud_pct}%</h2>
     <h2>Precipitation</h2>
   </div>
   <div
-    class="flex flex-col border-gray-400 h-14 justify-center border"
+    class="flex flex-col border-gray-400 h-14 justify-center border lg:hidden md:hidden"
   ></div>
-  <div class="flex flex-col items-center">
+  <div class="flex flex-col items-center flex-1 basis-40">
     <img class="h-10" src="IconPack/Frame 11.png" />
     <h2>${weather.wind_speed} km/h</h2>
     <h2>Wind Speed</h2>
   </div>
   <div
-    class="flex flex-col border-gray-400 h-14 justify-center border"
+    class="flex flex-col border-gray-400 h-14 justify-center border xl:invisible lg:visible"
   ></div>
-  <div class="flex flex-col items-center">
+  <div class="flex flex-col items-center flex-1 basis-40">
     <img class="h-10" src="IconPack/Frame 13.png" />
     <h2>${moment.unix(weather.sunrise).format("LT")}</h2>
     <h2>Sunrise</h2>
   </div>
   <div
-    class="flex flex-col border-gray-400 h-14 justify-center border"
+    class="flex flex-col border-gray-400 h-14 justify-center border xxl:invisible xl:visible lg:hidden md:hidden" 
   ></div>
-  <div class="flex flex-col items-center">
+  <div class="flex flex-col items-center flex-1 basis-40">
     <img class="h-10" src="IconPack/Frame 12.png" />
     <h2>${moment.unix(weather.sunset).format("LT")}</h2>
     <h2>Sunset</h2>
